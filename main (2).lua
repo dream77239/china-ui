@@ -6590,7 +6590,7 @@ TextTruncate="AtEnd",
 TextXAlignment="Left",
 }),
 b("TextLabel",{
-Text=o.User.114514sb and"@fuck you"or"@"..game.Players.LocalPlayer.Name,
+Text=o.User.Akfkkw and"@fuck you"or"@"..game.Players.LocalPlayer.Name,
 TextSize=15,
 TextTransparency=.6,
 ThemeTag={
