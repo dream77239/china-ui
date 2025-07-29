@@ -6577,7 +6577,7 @@ AutomaticSize="XY",
 BackgroundTransparency=1,
 },{
 b("TextLabel",{
-Text=o.User.game.Players.LocalPlayer.DisplayName,
+Text=o.User.111 and"aaa"or game.Players.LocalPlayer.DisplayName,
 TextSize=17,
 ThemeTag={
 TextColor3="Text",
@@ -7010,7 +7010,7 @@ C:Visible(true)
 end
 end)
 
-local F=v and"Press "..o.ToggleKey.Name.." 问号"or"问号"
+local F=v and"Press "..o.ToggleKey.Name.." to open the Window"or"Click the Button to open the Window"
 
 if not o.IsOpenButtonEnabled then
 k=true
@@ -7019,7 +7019,7 @@ if not k then
 k=not k
 n.WindUI:Notify{
 Title="缩小",
-Content="你缩小了ui,可再次点击小型ui恢复原始大小"..F,
+Content="你缩小了ui,可再次点击小型ui恢复原始大小",
 Icon="eye-off",
 Duration=5,
 }
