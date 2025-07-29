@@ -6577,7 +6577,7 @@ AutomaticSize="XY",
 BackgroundTransparency=1,
 },{
 b("TextLabel",{
-Text=o.User.aaa and"aaa"or game.Players.LocalPlayer.DisplayName,
+Text=o.User.game.Players.LocalPlayer.DisplayName,
 TextSize=17,
 ThemeTag={
 TextColor3="Text",
@@ -7010,7 +7010,7 @@ C:Visible(true)
 end
 end)
 
-local F=v and"Press "..o.ToggleKey.Name.." to open the Window"or"Click the Button to open the Window"
+local F=v and"Press "..o.ToggleKey.Name.." 问号"or"问号"
 
 if not o.IsOpenButtonEnabled then
 k=true
