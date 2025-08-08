@@ -1097,7 +1097,7 @@ PaddingBottom=UDim.new(0,16),
 
 
 
-local B=g("Exit","log-out",function()
+local B=g("关闭","log-out",function()
 o:Close()()
 end,"Tertiary",z.Frame)
 
@@ -1109,12 +1109,12 @@ B.AnchorPoint=Vector2.new(0,1)
 end
 
 if i.KeySystem.URL then
-g("Get key","key",function()
+g("获取QQ群链接","key",function()
 setclipboard(i.KeySystem.URL)
 end,"Secondary",z.Frame)
 end
 
-local C=g("Submit","arrow-right",function()
+local C=g("继续","arrow-right",function()
 local C=p
 local D
 if type(i.KeySystem.Key)=="table"then
