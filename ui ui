@@ -6511,22 +6511,26 @@ end
 
 
 
-local w
-if o.User.Enabled then local
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 
-local thumbnail, isReady = Players:GetUserThumbnailAsync(
-    LocalPlayer.UserId,
-    Enum.ThumbnailType.HeadShot,
-    Enum.ThumbnailSize.Size420x420
-)
+local x, y
+local success, result1, result2 = pcall(function()
+    return Players:GetUserThumbnailAsync(
+        LocalPlayer.UserId,
+        Enum.ThumbnailType.HeadShot,
+        Enum.ThumbnailSize.Size420x420
+    )
+end)
 
-if isReady then
-    if YourImageLabel and YourImageLabel:IsA("ImageLabel") then
-        YourImageLabel.Image = thumbnail
-    end
+if success then
+    x, y = result1, result2
+else
+    x, y = "rbxasset://textures/ui/GuiImagePlaceholder.png", nil
 end
+
+-- continue with other code
+print("continue executing next functions")
 
 w=b("TextButton",{
 Size=UDim2.new(0,
